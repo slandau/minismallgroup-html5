@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      A Simple HTML Page
+    </title>
+    <style>
+      footer { bottom:0px; position:absolute;}
+      header { padding-bottom:30px;}
+      header p { font-size:24px; font-weight:bold; }
+      nav { padding:5px; }
+      article:hover{ background-color:#333333;cursor:pointer;}
+      article {
+            border:1px solid #cccccc;
+          }
+       body { 
+        background-color:#444444; color:white;
+        -moz-transition: opacity 1s ease;  /* FF3.7+ */
+        -webkit-transition: opacity 1s ease;  /* Saf3.2+, Chrome */
+        transition: opacity 1s ease;
+      }
+      a { color:#aaaaaa;text-decoration: none;}
+
+      @media only screen and (max-width:600px) {
+
+      }
+      @media only screen and (min-width:600px) and (max-width:900px) {
+          article {
+            width:48%;
+       
+          }
+          .entry1 { float:left;}
+          .entry2 { float:left; }
+          .entry3 {  clear:both;  }
+      }
+
+      @media only screen and (min-width:900px) {
+          article {
+            float:left;
+            width:33%;
+     
+          }
+          .entry1 { }
+          .entry2 {  }
+          .entry3 {    }
+      }
+      @media screen and (max-device-width:480px) and (orientation:portrait) {
+        body { background-color:#000000; }
+      }
+  </style>
+<link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="smally-device.css" />
+  </head>
+  <body>
+    <header>
+      <p>Header</p>
+      <nav>
+        <a href='#'>Some Nav Link</a>
+        <a href='#'>Some Other Nav Link</a>
+        <a href='#'>A Third Nav Link</a>
+      </nav>
+    </header>
+      <section>
+        <article class='entry1'>
+          <p>
+            1This is an important section of content on the page.
+            Perhaps a blog post.
+          </p>
+          
+        </article>
+        <article class='entry2'>
+          <p>
+            2This is an important section of content on the page.
+            Perhaps a blog post.
+          </p>
+        </article>
+        <article class='entry3'>
+          <p>
+            3This is an important section of content on the page.
+            Perhaps a blog post.
+          </p>
+        </article>
+      </section>
+    <footer>Footer</footer>
+  </body>
+</html>
